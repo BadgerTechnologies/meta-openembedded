@@ -12,20 +12,19 @@ Signed-off-by: Khem Raj <raj.khem@gmail.com>
 
 --- a/go.mod
 +++ b/go.mod
-@@ -56,4 +56,5 @@ require (
- 	google.golang.org/grpc v1.26.0
+@@ -223,3 +223,4 @@ require (
  )
  
+ replace github.com/nats-io/nats-streaming-server v0.11.2 => github.com/influxdata/nats-streaming-server v0.11.3-0.20201112040610-c277f7560803
 +replace github.com/pkg/term => github.com/kraj/term v0.0.0-20210111231523-7c42fcb0e627
- replace github.com/cespare/xxhash => github.com/kraj/xxhash v1.1.1-0.20211201014032-8254a11eab56
 --- a/go.sum
 +++ b/go.sum
-@@ -188,6 +188,8 @@ github.com/kr/pretty v0.1.0/go.mod h1:dA
- github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
- github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
+@@ -610,6 +610,8 @@ github.com/kr/pty v1.1.1/go.mod h1:pFQYn
  github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
+ github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
+ github.com/kr/text v0.2.0/go.mod h1:eLer722TekiGuMkidMxC/pM04lWEeraHUUmBw8l2grE=
 +github.com/kraj/term v0.0.0-20210111231523-7c42fcb0e627 h1:3/XXm86KqrOZEJvEmFlzl3NTFA99n5Pd/cSXl60LmuA=
 +github.com/kraj/term v0.0.0-20210111231523-7c42fcb0e627/go.mod h1:BYR4E+NOQrH+NhXE71KuBNmyR1lQ+yDvP+O3IIHO5bM=
- github.com/kraj/xxhash v1.1.1-0.20211201014032-8254a11eab56 h1:hCQ0jTkNInQ7PpNeGlSV9s+QMi6nUyyMuz37Bg3TduE=
- github.com/kraj/xxhash v1.1.1-0.20211201014032-8254a11eab56/go.mod h1:XrSqR1VqqWfGrhpAt58auRo0WTKS1nRRg3ghfAqPWnc=
- github.com/lib/pq v1.0.0 h1:X5PMW56eZitiTeO7tKzZxFCSpbFZJtkMMooicw2us9A=
+ github.com/labstack/echo/v4 v4.2.1/go.mod h1:AA49e0DZ8kk5jTOOCKNuPR6oTnBS0dYiM4FW1e6jwpg=
+ github.com/labstack/gommon v0.3.0/go.mod h1:MULnywXg0yavhxWKc+lOruYdAhDwPK9wf0OL7NoOu+k=
+ github.com/lann/builder v0.0.0-20180802200727-47ae307949d0 h1:SOEGU9fKiNWd/HOJuq6+3iTQz8KNCLtVX6idSoTLdUw=

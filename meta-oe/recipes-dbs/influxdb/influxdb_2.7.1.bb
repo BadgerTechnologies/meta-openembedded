@@ -2,7 +2,7 @@ DESCRIPTION = "InfluxDB is a time series database designed to handle high write 
 HOMEPAGE = "https://www.influxdata.com/products/influxdb-overview/"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=f39a8d10930fb37bd59adabb3b9d0bd6"
+LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=86f93342918318318c795b9999bd8131"
 
 RDEPENDS:${PN} = "bash"
 RDEPENDS:${PN}-dev = "bash"
@@ -15,15 +15,16 @@ GO_INSTALL = "\
 "
 
 SRC_URI = "\
-    git://${GO_IMPORT};protocol=https;branch=1.8;destsuffix=${BPN}-${PV}/src/${GO_IMPORT} \
-    file://0001-Use-v2.1.2-xxhash-to-fix-build-with-go-1.17.patch;patchdir=src/${GO_IMPORT} \
+    git://${GO_IMPORT};protocol=https;branch=2.7;destsuffix=${BPN}-${PV}/src/${GO_IMPORT} \
     file://influxdb \
     file://influxdb.conf \
 "
 
 SRC_URI:append:mipsarch = " file://0001-patch-term-module-for-mips-ispeed-ospeed-termios-abs.patch;patchdir=src/${GO_IMPORT}"
 
-SRCREV = "688e697c51fd5353725da078555adbeff0363d01"
+SRCREV = "407fa622e9a0a48516dacc7564f7ba59c8307da9"
+
+CGO_ENABLED = "1"
 
 inherit go-mod pkgconfig systemd update-rc.d useradd
 
